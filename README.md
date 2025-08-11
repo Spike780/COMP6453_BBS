@@ -24,7 +24,8 @@ The main process includes:
 ```
 .
 ├── benchmarking/
-│   └── bankmark.py               # Performance benchmark script
+│   └── benchmark.py              # Performance benchmark script
+|   └── compare_BLS.py            # Compare with BLS script
 ├── common/
 │   ├── bbsp.py                   # Core logic for BBS+ signing, verification, and proofs
 │   ├── test_bbsp.py              # Tests for BBS+
@@ -75,7 +76,7 @@ This project depends on the `py_ecc` library.
     ```bash
     python -m distributed_keygen.test_keygen_protocol
     python -m common.test_bbsp
-    python -m signature_reconstruction.test_reconstructor
+    python -m signature_reconstruction.reconstructor
     ```   
 ## Known Issues
 

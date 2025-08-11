@@ -7,7 +7,7 @@ from py_ecc.optimized_bls12_381  import multiply
 def test_bbs_signature1():
     # Parameters
     message_count = 3
-    messages = [10, 20, 30]
+    messages = ["10", "20", "30"]
 
     # Generate H vector
     H_vec = generate_h_vector(message_count)
